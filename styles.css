@@ -86,6 +86,7 @@ button {
 }
 .relleno{
     background: none;
+    color: none;
 }
   
 @media(max-width: 768px) {
