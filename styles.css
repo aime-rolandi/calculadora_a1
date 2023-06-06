@@ -62,10 +62,30 @@ button {
     border-radius: 8px;
 }
 .operadores{
-    color: #fff;
+    color: rgb(195, 195, 93);
     font-weight: bolder;
-    background: rgb(1,1,1);
-    background: radial-gradient(circle, rgba(1,1,1,1) 13%, rgba(84,73,93,1) 78%);
+    background: none;
+}
+.borrarT{
+    color: red;
+    font-size: 33px;
+    background: none;
+}
+.borrarU{
+    color: rgb(0, 135, 0);
+    font-weight:bolder;
+    font-size: 33px;
+    background: none;
+}
+.resultado{
+    color: rgb(0, 135, 0);
+    font-weight: bolder;
+    font-size: 33px;
+    background: none;
+
+}
+.relleno{
+    background: none;
 }
   
 @media(max-width: 768px) {

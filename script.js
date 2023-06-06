@@ -19,7 +19,13 @@ function agregarDecimal(float) {
 
 function calcularResultado() {
     try {
-        resultado.value = eval(resultado.value);
+        // resultado.value = eval(resultado.value);
+        let expression = resultado.value;
+
+        // Reemplaza los símbolos de porcentaje (%) con una multiplicación por 0.01
+        expression = expression.replace(/%/g, '*0.01');
+
+        resultado.value = eval(expression);
     } catch(error) {
         resultado.value = 'Error';
     }
@@ -37,7 +43,7 @@ function borrar() {
 document.addEventListener('keydown', function(event){
     const tecla = event.key;
     const numerosPermitidos = ['0','1','2','3','4','5','6','7','8','9'];
-    const operadoresPermitidos = ['+','-','*','/'];
+    const operadoresPermitidos = ['+','-','*','/','%'];
     const resultadoPermitido = ['=', 'Enter'];
     const borrarCaracter = ['Backspace'];
     const borrarTodo = ['c','Delete'];

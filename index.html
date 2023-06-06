@@ -12,12 +12,13 @@
         <div class="caja-result">
             <label for="resultado" id="label-resultado">.</label>
             <input type="text" id="resultado" readonly>
+            
         </div>
         <div class="teclas">
-            <button class="operadores" onclick="borrar()">C</button>
+            <button class="borrarT" onclick="borrar()">C</button>
             <button class="operadores" onclick="agregarOperador('/')">/</button>
-            <button class="operadores" onclick="agregarOperador('*')">*</button>
-            <button class="operadores" onclick="borrarUltimoCaracter()">←</button>
+            <button class="operadores" onclick="agregarOperador('*')">x</button>
+            <button class="borrarU" class="borrarUlt" onclick="borrarUltimoCaracter()">←</button>
             <button onclick="agregarNumero('7')">7</button>
             <button onclick="agregarNumero('8')">8</button>
             <button onclick="agregarNumero('9')">9</button>
@@ -29,9 +30,11 @@
             <button onclick="agregarNumero('1')">1</button>
             <button onclick="agregarNumero('2')">2</button>
             <button onclick="agregarNumero('3')">3</button>
-            <button class="operadores" onclick="calcularResultado()">=</button>
+            <button class="operadores" onclick="agregarOperador('%')">%</button>
+            <button class="relleno" ></button>
             <button onclick="agregarNumero('0')">0</button>
             <button onclick="agregarDecimal('.')">.</button>
+            <button class="resultado" onclick="calcularResultado()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
