@@ -77,7 +77,28 @@ button {
     }
     button{
         font-size: 18px;
+        height: auto;
+        width: auto
     }
 } 
+@media(max-heigth: 500px){
+    .calculadora{
+        width: 60%;
+        height: 90%;
+        font-size: 16px;
+    }
+    #resultado{
+        font-size: 40px;
+
+    }
+    input[type="text"]{
+        font-size: 20px;
+    }
+    button{
+        font-size: 18px;
+        height: auto;
+        width: auto
+    }
+}
   
   
